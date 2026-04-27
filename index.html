@@ -1,0 +1,554 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/Untitled%20design%20(55).png">
+    <title>LEN's Vault | Homepage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Cal+Sans);
+        @import url(https://fonts.googleapis.com/css?family=Outfit);
+
+
+
+
+
+
+        .info {
+            background-color: #F7DD7D;
+            border-radius: 20px;
+            width: 95%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        header {
+            background: linear-gradient(135deg, #427AB5, #406AAF);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            font-family: 'Cal Sans';
+            color: #F7DD7D;
+        }
+
+        header ul {
+            padding: 10px 0;
+        }
+
+        .info {
+            margin-top: 30px;
+            padding: 40px !important;
+        }
+
+        h1 {
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
+        .info p {
+            font-family: 'Outfit';
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .leane {
+            background-color: #f2f0ef;
+        }
+
+        .shopdiv {
+            background-color: #F7DD7D;
+        }
+
+        .card {
+            font-family: 'Cal Sans';
+        }
+
+        .card h1 {
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h1 {
+            font-family: 'Cal Sans';
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Outfit';
+            font-size: 24px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn {
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #F7DD7D;
+            transform: translateY(-2px);
+        }
+
+
+
+        header {
+            position: sticky;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100000;
+            overflow: hidden;
+        }
+
+        header h1 {
+            position: absolute;
+            left: 20px;
+        }
+
+        header .cart {
+            position: absolute;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- color palette:
+     427AB5
+     406AAF
+     F7DD7D
+     FFE8BE
+    -->
+    <header class="pt-2 pb-1 d-flex justify-content-between align-items-center px-4">
+
+        <h1>L.E.N's Vault</h1>
+
+        <ul class="d-flex justify-content-center flex-grow-1 gap-4 m-0">
+            <li><a href="#popmart">Popmart</a></li>
+            <li><a href="#shoes">Shoes</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#pets">Pets</a></li>
+            <li><a href="#boardgames">Board Games</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+        </ul>
+
+        <div class="cart">
+            <a href="#cart"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a href="authors.html" data-bs-toggle="tooltip" title="About The Company"><i class="fa-solid fa-people-group"></i></a>
+        </div>
+
+    </header>
+    <div class="container info px-5 mx-auto mt-3 align-self-center">
+        <h1 class="" style="font-family: 'Cal Sans';">What do we do?</h1>
+        <p id="popmart">At L.E.N's Vault, we help you buy anything you want. With our six diverse categories, we can
+            sell you
+            collectibles like Hironos to luxuries like sports cars! You can buy almost anything under the sun here!</p>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="card p-4 shadow-lg rounded-4 text-center">
+            <h2 class="text-left" style="color: rgb(235, 28, 28);">Popmart</h2>
+            <p>Find your favorite collectibles here!</p>
+            <div class="d-flex justify-content-center">
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/1.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Hirono</h5>
+                    <p style="margin-top: -9px;">Php 5,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Hirono', 5000)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/2.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Molly</h5>
+                    <p style="margin-top: -9px;">Php 1,929</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Molly', 1929)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/3.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Hacipupu</h5>
+                    <p style="margin-top: -9px;">Php 1,050</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Hacipupu', 1050)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/4.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Dimoo</h5>
+                    <p style="margin-top: -9px;">Php 850</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Dimoo', 850)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/5.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Nyota</h5>
+                    <p style="margin-top: -9px;">Php 600</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Nyota', 600)" id="shoes">Add To
+                        Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="my-5" style="width:80%; margin:auto;" id="shoes">
+
+    <div class="container-fluid mt-5">
+        <div class="card p-4 shadow-lg rounded-4 text-center">
+            <h2 class="text-left" style="color: rgb(235, 170, 28);">Shoes</h2>
+            <p>Find your favorite footwear in this section!</p>
+            <div class="d-flex justify-content-center">
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/6.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Adidas</h5>
+                    <p style="margin-top: -9px;">Php 8,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Adidas', 8000)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/7.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Puma</h5>
+                    <p style="margin-top: -9px;">Php 7,100</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Puma', 7100)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/8.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Onitsukas</h5>
+                    <p style="margin-top: -9px;">Php 10,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Onitsukas', 10000)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/9.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Nike</h5>
+                    <p style="margin-top: -9px;">Php 7,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Nike', 7000)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/10.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Converse</h5>
+                    <p style="margin-top: -9px;">Php 5,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Converse', 5000)" id="cars">Add To
+                        Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <hr class="my-5" style="width:80%; margin:auto;" >
+    <div class="container-fluid mt-5">
+        <div class="card p-4 shadow-lg rounded-4 text-center">
+            <h2 class="text-left" style="color: rgb(47, 112, 24);">Cars</h2>
+            <p>Aching for a ride? Buy your own car (with documents) here!</p>
+            <div class="d-flex justify-content-center">
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/11.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Cadillac</h5>
+                    <p style="margin-top: -9px;">Php 5,677,777</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Cadillac', 5677777)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/12.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Lamborghini</h5>
+                    <p style="margin-top: -9px;">Php 32,500,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Lamborghini', 32500000)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/13.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Porsche</h5>
+                    <p style="margin-top: -9px;">Php 9,600,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Porsche', 9600000)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/14.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Aston Martin</h5>
+                    <p style="margin-top: -9px;">Php 33,500,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Aston Martin', 3350000)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/15.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Pagani</h5>
+                    <p style="margin-top: -9px;">Php 267,000,000</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Pagani', 267000000)" id="pets">Add To
+                        Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="my-5" style="width:80%; margin:auto;" >
+    <div class="container-fluid mt-5">
+        <div class="card p-4 shadow-lg rounded-4 text-center">
+            <h2 class="text-left" style="color: rgb(238, 52, 255);">Adopt-A-Pet</h2>
+            <p>Want a new family member, friend, colleague, acquintance, whatever else? Adopt a pet right here, right now! <span class="fst-italic">Pets are treated with care and transported safely.</span></p>
+             <div class="d-flex justify-content-center">
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/16.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Dog</h5>
+                    <p style="margin-top: -9px;">Php 5,677</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Dog - Adopted', 5677)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/17.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Cat</h5>
+                    <p style="margin-top: -9px;">Php 5,405</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Cat - Adopted', 5405)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/18.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Hamster</h5>
+                    <p style="margin-top: -9px;">Php 2,105</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Hamster - Adopted', 2105)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/19.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Bunny</h5>
+                    <p style="margin-top: -9px;">Php 3,530</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Bunny - Adopted', 3530)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/20.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Ferret</h5>
+                    <p style="margin-top: -9px;">Php 10,500</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Ferret - Adopted', 10500)" id="boardgames">Add To
+                        Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="my-5" style="width:80%; margin:auto;" >
+    <div class="container-fluid mt-5">
+        <div class="card p-4 shadow-lg rounded-4 text-center">
+            <h2 class="text-left" style="color: rgb(150, 37, 202);">Board Games</h2>
+            <p>Want to have some fun with family or friends? Buy your favorite games right here!</p>
+            <div class="d-flex justify-content-center">
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/21.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Ultimate Werewolf: Deluxe</h5>
+                    <p style="margin-top: -9px;">Php 700</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Ultimate Werewolf: Deluxe', 700)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/22.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Uno: No Mercy</h5>
+                    <p style="margin-top: -9px;">Php 450</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Uno: No Mercy', 450)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/23.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Taco Cat Goat Cheese Pizza</h5>
+                    <p style="margin-top: -9px;">Php 245</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Taco Cat Goat Cheese Pizza', 245)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/24.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Monopoly: Mega Edition</h5>
+                    <p style="margin-top: -9px;">Php 5,048</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Monopoly: Mega Edition', 5048)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/25.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Cluedo</h5>
+                    <p style="margin-top: -9px;">Php 450</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Cluedo', 450)" id="desserts">Add To
+                        Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="my-5" style="width:80%; margin:auto;" >
+    <div class="container-fluid mt-5">
+        <div class="card p-4 shadow-lg rounded-4 text-center">
+            <h2 class="text-left" style="color: rgb(28, 216, 144);">Desserts</h2>
+            <p>Got a sweet tooth? Get your favorite desserts!</p>
+            <div class="d-flex justify-content-center">
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/26.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Chocolate Chip Cookie</h5>
+                    <p style="margin-top: -9px;">Php 55</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Chocolate Chip Cookie', 55)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/27.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Dubai Chewy Cookie</h5>
+                    <p style="margin-top: -9px;">Php 250</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Dubai Chewy Cookie', 250)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/28.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Bavarian Donut</h5>
+                    <p style="margin-top: -9px;">Php 45</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Bavarian Donut', 45)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/29.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Chocolate Cake Slice</h5>
+                    <p style="margin-top: -9px;">Php 125</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Chocolate Cake Slice', 125)">Add To
+                        Cart</button>
+                </div>
+                <div class="product-card p-3 text-center">
+                    <img src="https://raw.githubusercontent.com/adsicat2029/CS3Q4/refs/heads/main/30.jpg"
+                        class="img-fluid rounded " width="250" height="250">
+                    <h5 class="m-2">Chocolate Cupcake</h5>
+                    <p style="margin-top: -9px;">Php 45</p>
+                    <button class="btn btn-primary" style="margin-top: -14px;" onclick="add('Chocolate Cupcake', 45)">Add To
+                        Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="mt-5 mb-3" style="width:80%; margin:auto;" id="cart">
+    <h1 class="text-center">Cart</h1>
+    <div class="container-fluid mt-1 mb-5 d-flex justify-content-around">
+        <div class="card p-4 shadow-lg rounded-4 "
+            style="width: 64%; max-height: 400px; overflow-y: scroll; overflow-x: hidden;">
+            <h5 class="text-muted text-center">Items</h5>
+            <ul id="cartlist">
+
+            </ul>
+        </div>
+        <div class="card p-4 shadow-lg rounded-4 " style="width: 33%; max-height: max-content;">
+            <h5 class="text-muted text-center">Checkout</h5>
+            <h3 class="text-left" id="total">Cart Total: </h3>
+
+            <form action="http://52.74.133.173/cs3/checkout.php" method="post" onsubmit="updatehidden()">
+                <label for="cust_name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="cust_name" name="cust_name" placeholder="Juan Dela Cruz">
+                <label for="cust_addr" class="form-label mt-2">Address</label>
+                <input type="text" class="form-control" id="cust_addr" name="cust_addr" placeholder="101 Philippines Street, Barangay 123, Mabalacat City, Pampanga">
+                <label for="cust_email" class="form-label mt-2">Email</label>
+                <input type="email" class="form-control" id="cust_email" name="cust_email" placeholder="abc@website.com">
+
+                <input type="hidden" name="cust_order" id="cust_order">
+
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <script>
+        var cart = [];
+
+
+
+        function displayCart() {
+            document.getElementById("cartlist").innerHTML = "";
+            var total = 0;
+            updatehidden();
+
+            for (var i = 0; i < cart.length; i++) {
+
+                var prod_price = cart[i].prod_price;
+                var poststring = '<li class="inline-block mt-3"> <h3>' + cart[i].prod_name + '</h3> <h5 class="text-muted">Php ' + Number(cart[i].prod_price).toLocaleString('en-US') + '</h5>' +
+                    '<button class="btn btn-danger" onclick="removeItem(' + i + ')">Remove</button></li>';
+
+                document.getElementById('cartlist').innerHTML += poststring;
+                total += Number(cart[i].prod_price);
+
+
+            }
+
+            document.getElementById('total').innerHTML = "Cart Total: Php " + total.toLocaleString('en-US');
+        }
+
+        function updatehidden() {
+            document.getElementById("cust_order").value = JSON.stringify(cart);
+        }
+
+        function add(name, price) {
+            var product = {
+                prod_name: name,
+                prod_price: Number(price)
+            }
+
+            cart.push(product);
+
+            displayCart();
+
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            displayCart();
+        }
+
+        displayCart();
+
+
+    </script>
+
+</body>
+
+</html>
